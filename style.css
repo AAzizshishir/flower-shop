@@ -40,7 +40,7 @@ body {
 .btn:hover {
   background: #a64257;
 }
-section{
+section {
   max-width: 980px;
   text-align: center;
   margin: 80px auto;
@@ -165,20 +165,42 @@ section{
   text-align: center;
   margin-bottom: 2rem;
 }
-.offer .content span{
+.offer .content span {
   color: rgb(229, 84, 115);
 }
-.offer img{
+.offer img {
   width: 204px;
 }
 /* Offer Section Style End */
 
 /* Instagram Section Style */
-.instagram .image-container img{
+.instagram .image-container img {
   width: 218px;
   margin: 0 5px;
 }
 /* Instagram Section Style End */
+
+/* Latest Deals/Offer Section Style */
+.deals {
+  padding: 78px 184px;
+  background-image: url(./Flower-Asset/Rectangle\ 9.png);
+}
+.deals input {
+  width: 400px;
+  border-radius: 5px;
+  padding: 14px 20px;
+  color: rgba(39, 39, 39, 0.6);
+  font-size: 10px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  margin-right: 8px;
+}
+.deals .description {
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+/* Latest Deals/Offer Section Style End */
 
 /* Responsive */
 /* For Mobile */
@@ -213,14 +235,21 @@ section{
     flex-direction: column;
     gap: 15px;
   }
-  .offer{
+  .offer,
+  .deals {
     padding: 20px;
   }
 
-  .instagram .image-container img{
+  .instagram .image-container img {
     margin: 5px;
   }
-  
+  .deals input {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  .deals .section-title {
+    color: #000;
+  }
 }
 /* For Tablet */
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -232,5 +261,9 @@ section{
   }
   .header .image-conteiner {
     flex-basis: 50%;
+  }
+  .offer,
+  .deals {
+    padding: 20px;
   }
 }
