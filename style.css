@@ -124,6 +124,34 @@ body {
 }
 /* Features of Flower Area Style End */
 
+/* Service Section Style */
+.service {
+  max-width: 920px;
+  margin: 0 auto;
+  margin-top: 150px;
+  border-radius: 5px;
+  background: rgba(39, 39, 39, 0.05);
+  padding: 55px 92px;
+}
+.service .service-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service .service-content img {
+  width: 56px;
+}
+.service .service-content .box {
+  text-align: center;
+  margin: 0 26px;
+}
+.service .service-content .box p {
+  color: rgba(39, 39, 39, 0.8);
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+/* Service Section Style End */
 /* Responsive */
 /* For Mobile */
 @media screen and (max-width: 576px) {
@@ -152,7 +180,8 @@ body {
   }
 
   /* Feature */
-  .feature .image-container {
+  .feature .image-container,
+  .service .service-content {
     flex-direction: column;
     gap: 15px;
   }
