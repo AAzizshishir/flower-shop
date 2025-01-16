@@ -16,7 +16,7 @@ body {
 /* Shared Style */
 .section-title {
   color: rgb(39, 39, 39);
-  font-size: 1.63rem;
+  font-size: 1.53rem;
   font-weight: 800;
   text-align: center;
 }
@@ -25,6 +25,7 @@ body {
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 18px;
+  margin: 1rem 0;
 }
 .btn {
   border-radius: 5px;
@@ -38,6 +39,11 @@ body {
 }
 .btn:hover {
   background: #a64257;
+}
+section{
+  max-width: 920px;
+  text-align: center;
+  margin: 80px auto;
 }
 /* Header Area Style */
 .header {
@@ -58,7 +64,6 @@ body {
   line-height: 60px;
 }
 .header .description {
-  margin: 16px 0 12px;
   max-width: 400px;
 }
 .header .image-conteiner {
@@ -74,11 +79,6 @@ body {
 /* End Header Area Style */
 
 /* Features of Flower Area Style */
-.feature {
-  max-width: 920px;
-  text-align: center;
-  margin: 80px auto;
-}
 .feature .description {
   margin: 15px 0 35px;
 }
@@ -126,9 +126,6 @@ body {
 
 /* Service Section Style */
 .service {
-  max-width: 920px;
-  margin: 0 auto;
-  margin-top: 150px;
   border-radius: 5px;
   background: rgba(39, 39, 39, 0.05);
   padding: 55px 92px;
@@ -136,7 +133,7 @@ body {
 .service .service-content {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 .service .service-content img {
   width: 56px;
@@ -152,6 +149,31 @@ body {
   margin-top: 12px;
 }
 /* Service Section Style End */
+
+/* Offer Section Style */
+.offer {
+  max-width: 1220px;
+  background: rgba(229, 84, 115, 0.05);
+  padding: 50px 250px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.offer .content {
+  max-width: 380px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.offer .content span{
+  color: rgb(229, 84, 115);
+}
+.offer img{
+  width: 204px;
+}
+/* Offer Section Style End */
+
+
 /* Responsive */
 /* For Mobile */
 @media screen and (max-width: 576px) {
@@ -181,10 +203,15 @@ body {
 
   /* Feature */
   .feature .image-container,
-  .service .service-content {
+  .service .service-content,
+  .offer {
     flex-direction: column;
     gap: 15px;
   }
+  .offer{
+    padding: 20px;
+  }
+  /* Offer Section Style End */
 }
 /* For Tablet */
 @media screen and (min-width: 576px) and (max-width: 992px) {
