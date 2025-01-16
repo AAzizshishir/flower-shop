@@ -41,7 +41,7 @@ body {
   background: #a64257;
 }
 section{
-  max-width: 920px;
+  max-width: 980px;
   text-align: center;
   margin: 80px auto;
 }
@@ -173,6 +173,12 @@ section{
 }
 /* Offer Section Style End */
 
+/* Instagram Section Style */
+.instagram .image-container img{
+  width: 218px;
+  margin: 0 5px;
+}
+/* Instagram Section Style End */
 
 /* Responsive */
 /* For Mobile */
@@ -201,7 +207,6 @@ section{
     height: 100%;
   }
 
-  /* Feature */
   .feature .image-container,
   .service .service-content,
   .offer {
@@ -211,7 +216,11 @@ section{
   .offer{
     padding: 20px;
   }
-  /* Offer Section Style End */
+
+  .instagram .image-container img{
+    margin: 5px;
+  }
+  
 }
 /* For Tablet */
 @media screen and (min-width: 576px) and (max-width: 992px) {
